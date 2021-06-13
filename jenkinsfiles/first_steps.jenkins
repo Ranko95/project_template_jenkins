@@ -16,5 +16,10 @@ pipeline {
         sh 'ssh root@deb1 \'hostname\''
       }
     }
+    stage("Second step") {
+      steps {
+        sh 'ssh root@deb1 \'echo Hello World!\''
+      }
+    }
   }
 }
